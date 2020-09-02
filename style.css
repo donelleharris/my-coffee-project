@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Fredericka+the+Great&family=Trade+Winds&display=swap');
+
+* {
+    display: inline-block;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #DCCCBAd1;
+    font-family: 'Bangers', cursive;
+}
+.jumbotron {
+    background-color: #DCCCBA;
+}
+nav {
+    color: #341710;
+    background-color: #DCCCBA;
+}
+h1 {
+    color: #341710;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #C79E71;
+    font-size: 100px;
+}
+footer {
+    background-color: #DCCCBA;
+    color: #341710;
+    font-size: larger;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #C79E71;
+}
+
+a {
+    color: black;
+    font-weight: lighter;
+}
+a:hover {
+    color: blue;
+}
+a:visited {
+    color: gray;
+}
+i {
+    color: black;
+}
