@@ -4,19 +4,25 @@ function renderCoffee(coffee) {
     var html = '<div class="coffee d-flex flex-column align-items-center text-center h-25 w-25">';
     // html += '<div>' + coffee.id + '</>';
     html += '<div class="mx-4 pt-2">' + '<h3>' + coffee.name + '</h3>' + '</div>';
-    html += '<div class="pb-2 font-">' + coffee.roast + '</div>';
+    html += '<div class="pb-2">' + coffee.roast + '</div>';
     html += '</div>';
 
     return html;
 }
-
-function renderCoffees(coffees) {
-    var html = '';
-    for(var i = 0; i <= coffees.length - 1; i++) {
-        html += renderCoffee(coffees[i]);
-    }
+function sortCoffeeName(){
+    coffees.sort(function (a, b){
+        return a.name.localeCompare(b.name);
+    })
+    return coffees;
+}
+function renderCoffees(_coffees) {
+        var html = '';
+        sortCoffeeName().forEach((coffee) => {
+            html += renderCoffee(coffee)
+        })
     return html;
 }
+
 
 //updates coffee list!*******
 var updateCoffees = function() {

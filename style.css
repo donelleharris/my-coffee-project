@@ -23,6 +23,12 @@ h1 {
     -webkit-text-stroke-color: #C79E71;
     font-size: 100px;
 }
+.coffee {
+    color: #341710;
+    font-size: 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #C79E71;
+}
 footer {
     background-color: #DCCCBA;
     color: #341710;
